@@ -1,6 +1,6 @@
 import os
 #ROOT_FILE = r'D:\Perfil'
-ROOT_FILE = r'W:'#Teste root
+ROOT_FILE = r'C:\Perfil2'#Teste root
 
 # csv_current_value_protocol = r'W:\Respot1OP005\Protocolo valores de corrente16_12_2022_08_25_55.txt'
 # line_name = r'Respot 1'
@@ -17,6 +17,8 @@ class path_manipulation():
         for pc in self._pcs_list_dir:
             file_name = os.listdir(f'{ROOT_FILE}\{pc}')
             self._list_paths.append(f'{ROOT_FILE}\{pc}\{file_name}')
+            print(self._list_paths)
+            print(self._list_paths)
 
     def file_path(self,index):
         """
