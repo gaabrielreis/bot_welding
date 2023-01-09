@@ -12,8 +12,9 @@ class electrode_count():
         """
         self._path = path_manipulation()
         self._sql = sql_manipulation()
+        print("print: ",self._path._list_paths)
 
-        for pc in self._path.len_pcs:
+        for pc in self._path._list_paths:
             self._line_name = self._path.get_line_name(pc)
             for path in self._path.len_paths:           
                 try:
